@@ -1,0 +1,25 @@
+/* bugSolution.css */
+/* Solution for nested element context: Ensure parent element dimensions are explicitly defined */
+.parent {
+  width: 500px; /* Explicitly define parent width */
+}
+
+.child {
+  width: calc(100% - 50px);
+}
+
+/* Solution for operator precedence: Use parentheses for clarity */
+.element {
+  width: calc((100% - 20px) / 2);
+}
+
+/* Solution for unit mismatch: Ensure consistent units */
+.another {
+  height: calc(100px + 50%); /* Correct: combines pixels and percentage correctly */
+}
+
+/* Solution for missing spaces around operators */
+.element2 {
+  margin: calc(10px + 10px); /* Correct: spaces around + operator */
+}
+/* Ensure using appropriate units for calculations and always check for missing spaces around the operators to avoid unexpected behaviors*/
